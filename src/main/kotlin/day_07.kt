@@ -1,7 +1,7 @@
 import java.io.File
 import kotlin.math.abs
 
-fun main(args: Array<String>) {
+fun main() {
     val input = File("src/main/resources/day07.txt").readLines()
     println(puzzleOne(input))
     println(puzzleTwo(input))

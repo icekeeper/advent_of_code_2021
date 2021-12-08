@@ -2,7 +2,7 @@ import java.io.File
 import java.lang.Integer.max
 import java.lang.Integer.min
 
-fun main(args: Array<String>) {
+fun main() {
     val input = File("src/main/resources/day05.txt").readLines()
     println(puzzleOne(input))
     println(puzzleTwo(input))

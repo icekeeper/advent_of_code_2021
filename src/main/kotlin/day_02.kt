@@ -1,6 +1,6 @@
 import java.io.File
 
-fun main(args: Array<String>) {
+fun main() {
     val input = File("src/main/resources/day02.txt").readLines()
     println(puzzleOne(input))
     println(puzzleTwo(input))

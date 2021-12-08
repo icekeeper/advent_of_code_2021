@@ -1,7 +1,7 @@
 import java.io.File
 import java.math.BigInteger
 
-fun main(args: Array<String>) {
+fun main() {
     val input = File("src/main/resources/day06.txt").readLines()
     println(puzzleOne(input))
     println(puzzleTwo(input))
