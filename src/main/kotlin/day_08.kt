@@ -32,7 +32,7 @@ private fun puzzleTwo(input: List<String>): Any {
     return input.sumOf { line ->
         val (sample, data) = line.split(" | ")
         val key = deduce(sample.split(" ").map { it.toSet() })
-        val (a,b,c,d) = data.split(" ").map { it.toSet() }.map { key.getValue(it) }
+        val (a, b, c, d) = data.split(" ").map { it.toSet() }.map { key.getValue(it) }
         a * 1000 + b * 100 + c * 10 + d
     }
 }

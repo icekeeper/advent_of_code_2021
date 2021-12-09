@@ -15,7 +15,7 @@ private fun puzzleOne(input: List<String>): Any {
 
 private fun puzzleTwo(input: List<String>): Any? {
     val positions = input.first().split(',').map { it.toInt() }.sorted().toList()
-    fun fuel(x1:Int, x2:Int) = abs(x1-x2) * (1L + abs(x1-x2)) / 2
-    fun sumFuel(x:Int) = positions.sumOf { fuel(it, x) }
+    fun fuel(x1: Int, x2: Int) = abs(x1 - x2) * (1L + abs(x1 - x2)) / 2
+    fun sumFuel(x: Int) = positions.sumOf { fuel(it, x) }
     return (positions.first()..positions.last()).minOfOrNull { sumFuel(it) }
 }

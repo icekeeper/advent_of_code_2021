@@ -11,7 +11,7 @@ private fun puzzleOne(input: List<String>): Any {
     var y = 0
     input.forEach { line ->
         val (command, n) = line.split(" ")
-        when(command) {
+        when (command) {
             "forward" -> x += n.toInt()
             "down" -> y += n.toInt()
             "up" -> y -= n.toInt()
@@ -27,7 +27,7 @@ private fun puzzleTwo(input: List<String>): Any {
 
     input.forEach { line ->
         val (command, n) = line.split(" ")
-        when(command) {
+        when (command) {
             "forward" -> {
                 x += n.toLong()
                 y += n.toLong() * aim
