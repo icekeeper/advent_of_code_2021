@@ -1,5 +1,6 @@
 import java.io.File
 
+@ExperimentalStdlibApi
 fun main() {
     val input = File("src/main/resources/day09.txt").readLines()
     println(puzzleOne(input))
@@ -24,6 +25,7 @@ private fun puzzleOne(input: List<String>): Any {
     return sum
 }
 
+@ExperimentalStdlibApi
 private fun puzzleTwo(input: List<String>): Any {
     val map = input.map { line -> line.toList().map { it.digitToInt() } }
 
