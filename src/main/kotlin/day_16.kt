@@ -23,7 +23,7 @@ private fun parseLiteral(iterator: Iterator<Char>, version: Int): Literal {
 }
 
 private fun parseSubPackets(iterator: Iterator<Char>, length: Int): List<Packet> {
-    val subIterator = iterator.next(length).iterator()
+    val subIterator = iterator.asSequence().take(length).iterator()
     return generateSequence { if (subIterator.hasNext()) parsePacket(subIterator) else null }.toList()
 }
 
